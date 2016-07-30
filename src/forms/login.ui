@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QDialogButtonBox" name="validBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>240</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_9">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>40</y>
+     <width>251</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>AlBattar</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">Ba</string>
+   </property>
+   <property name="title">
+    <string>Twitter Username :</string>
+   </property>
+   <widget class="QLineEdit" name="lineUserName">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>31</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_10">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>130</y>
+     <width>251</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>AlBattar</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">Ba</string>
+   </property>
+   <property name="title">
+    <string>Twitter Password :</string>
+   </property>
+   <widget class="QLineEdit" name="linePass">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>31</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>validBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>validBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

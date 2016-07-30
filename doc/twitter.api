@@ -1,0 +1,64 @@
+->void updateStatus()
+{
+	//?  update de notre statut
+}
+update de nos infos:
+ ->username
+ -> name	
+ ->password
+ ->email
+ ->password
+
+}
+entrer : string
+
+
+->void endSession()
+{
+ //http://twitter.com/account/end_session.json
+ //POST
+}
+
+
+-> getfollowersusers
+{
+//http://apiwiki.twitter.com/Twitter-REST-API-Method%3A-friendships-show
+//GET
+//http://twitter.com/friendships/show.json
+list<users>
+}
+->get followingUsers:
+list<users>
+
+->FriendshipCreate(user& : user | name : string)
+{
+//http://twitter.com/friendships/create/this->_name.json
+}
+
+->unFollowUser(user : string | user& user)
+{
+->Method POST / DElete
+//http://twitter.com/friendships/destroy/screen_name.json
+}
+->blockUser(user& user)
+{
+}
+->search(user : string) un user / une liste d'user
+Param entree : user ::string
+Retour: liste de class user
+
+class User:
+->string id;
+->string name;
+->string screenName;
+->string location;
+->string profileImageUrl;
+->status currentStatus;
+->list<string>status
+->string _nbFriends;
+->string _nbFollowers;
+
+class Status:
+string _id;
+status _text;
+string _createdAt;
